@@ -2,7 +2,7 @@
 ##	Sección Publica
 #### Página de inicio:
 
-NO HAY IMAGENEEEEEEES
+NO HAY IMAGENES
 
 ![1](/ImagenesReadme/0.jpg?raw=true "Title")
 ![1](/ImagenesReadme/1.jpg?raw=true "Title")
