@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd"
+    version="2.3">
+	
+	<navigation-rule>
+		<from-view-id>/inicio.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/login.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>inicioPrincipal</from-outcome>
+			<to-view-id>/inicio.xhtml</to-view-id>
+		</navigation-case>	
+		
+		<navigation-case>
+			<from-outcome>inicioAdministrador</from-outcome>
+			<to-view-id>/InicioAdministrador.xhtml</to-view-id>
+		</navigation-case>	
+		
+		<navigation-case>
+			<from-outcome>inicioEmpleado</from-outcome>
+			<to-view-id>/InicioEmpleado.xhtml</to-view-id>
+		</navigation-case>	
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/InicioEmpleado.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>editarc</from-outcome>
+			<to-view-id>/EditarCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>agregarc</from-outcome>
+			<to-view-id>/AgregarCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>eliminarc</from-outcome>
+			<to-view-id>/EliminarCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>generarf</from-outcome>
+			<to-view-id>/GenerarFactura.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>anularf</from-outcome>
+			<to-view-id>/AnularFactura.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>buscarf</from-outcome>
+			<to-view-id>/BuscarFactura.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>salir</from-outcome>
+			<to-view-id>/inicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/AgregarCliente.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>agregarc</from-outcome>
+			<to-view-id>/AgregarCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/InicioEmpleado.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/EditarCliente.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>editarc</from-outcome>
+			<to-view-id>/EditarCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/InicioEmpleado.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/EliminarCliente.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>eliminarc</from-outcome>
+			<to-view-id>/EliminarCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/InicioEmpleado.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/GenerarFactura.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>generarf</from-outcome>
+			<to-view-id>/GenerarFactura.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/InicioEmpleado.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/AnularFactura.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>anularf</from-outcome>
+			<to-view-id>/AnularFactura.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/InicioEmpleado.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/BuscarFactura.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>inicioe</from-outcome>
+			<to-view-id>/InicioEmpleado.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<navigation-rule>
+		<from-view-id>/InicioAdministrador.xhtml</from-view-id>
+		
+		<navigation-case>
+			<from-outcome>inventariog</from-outcome>
+			<to-view-id>/InventarioGeneral.xhtml</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>editarb</from-outcome>
+			<to-view-id>/EditarBodega.xhtml</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>agregarP</from-outcome>
+			<to-view-id>/AgregarProductoPorBodega.xhtml</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>gestionp</from-outcome>
+			<to-view-id>/GestionProductoPorBodega.xhtml</to-view-id>
+		</navigation-case>
+		
+		<navigation-case>
+			<from-outcome>salir</from-outcome>
+			<to-view-id>/inicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+	<navigation-rule>
+		<from-view-id>/InventarioGeneral.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>inicioa</from-outcome>
+			<to-view-id>/InicioAdministrador.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+	<navigation-rule>
+		<from-view-id>/EditarBodega.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>editarb</from-outcome>
+			<to-view-id>/EditarBodega.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioa</from-outcome>
+			<to-view-id>/InicioAdministrador.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	<navigation-rule>
+		<from-view-id>/AgregarProductoPorBodega.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>agregarP</from-outcome>
+			<to-view-id>/AgregarProductoPorBodega.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioa</from-outcome>
+			<to-view-id>/InicioAdministrador.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+	<navigation-rule>
+		<from-view-id>/GestionProductoPorBodega.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>gestionp</from-outcome>
+			<to-view-id>/GestionProductoPorBodega.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicioa</from-outcome>
+			<to-view-id>/InicioAdministrador.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	
+	
+	
+	<navigation-rule>
+		<from-view-id>/ListarPedidos.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>listarped</from-outcome>
+			<to-view-id>/ListarPedidos.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicio</from-outcome>
+			<to-view-id>/inicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/RegistrarCliente.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>registrarc</from-outcome>
+			<to-view-id>/RegistrarCliente.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>inicio</from-outcome>
+			<to-view-id>/inicio.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+</faces-config>
